@@ -10,6 +10,7 @@ class UDPClient {
 public: 
     void Receiver();
     void Send(const std::string& msg);
+    void SendStun();
 
 private:
     void handle_receive(const boost::system::error_code& error, size_t bytes_transferred);

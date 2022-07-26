@@ -6,7 +6,7 @@ mkdir -p build_linux
 pushd build_linux
 
 conan install .. --build missing
-cmake .. -G "Unix Makefiles"
+cmake .. -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=DEBUG
 
 popd
 popd

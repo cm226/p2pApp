@@ -24,7 +24,7 @@ int main(int argc, char* argv[])
         while (msg.compare("quit")) {
             std::cout << "Enter a message: ";
             std::cin >> msg;
-            client.Send(msg);
+            client.SendStun();
         }
         
     }
